@@ -10,53 +10,64 @@
 <body>
 
 	<div class="container">
-		<div class="search">
-			<h1 class="search__title">Welcome search for english words</h1>
-			<p class="search__desc">
-				Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam numquam molestiae doloremque vitae minima minus reiciendis iure reprehenderit, cum aliquam rem soluta dolores porro quasi suscipit quae nam a facilis?
-			</p>
-			<div class="search__form">
-				<input type="text" name="" id="searchField" placeholder="Enter an english word to search for its meanings">
-				<button id="submitBtn">Search</button>
-			</div>
-
-			<!-- loader -->
-			<div class="loader" id="preloader">
-				<div class="loader__bar"></div>
-			</div>
-
-			<!-- data result -->
-			<div class="data">
-				<div class="data__header">
-					<h1>Revamp</h1>
-					<div>
-						<!-- icon -->
-					</div>
-				</div>
-				<div>
-					<h5 class="data__pos">Conjuction</h5>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis necessitatibus fugiat impedit ullam nihil atque similique quod quo a at odio, harum error aliquid delectus ea? Placeat repellat dolorum minima!
+		<div class="block">
+			<div class="search">
+				<div class="search__header" id="searchHeader">
+					<h1 class="search__header__title">Welcome search for english words</h1>
+					<p class="search__header__desc">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam numquam molestiae doloremque vitae minima minus reiciendis iure reprehenderit, cum aliquam rem soluta dolores porro quasi suscipit quae nam a facilis?
 					</p>
-					<div class="data__example">
+				</div>
+				<div class="search__form">
+					<input type="text" name="" id="searchField" placeholder="Enter an english word to search for its meanings">
+					<button id="submitBtn">Search</button>
+				</div>
+	
+				<!-- loader -->
+				<div class="loader" id="preloader">
+					<div class="loader__bar"></div>
+				</div>
+	
+				<!-- data result -->
+				<div class="data">
+					<div class="data__header">
+						<div class="data__header__content">
+							<h1>Revamp</h1>
+							<p>/e:hamp/</p>
+						</div>
+						<div>
+							<!-- icon -->
+						</div>
+					</div>
+					<div class="data__speech">
+						<h6>Conjuction</h6>
 						<p>
-							<b>Example: </b>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ducimus quos? Vitae, odio aliquid, quasi omnis earum aliquam excepturi enim ad debitis exercitationem beatae delectus vero ipsam minus nemo! Eligendi!
+							<b>Definition: </b>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis necessitatibus fugiat impedit ullam nihil atque similique quod quo a at odio, harum error aliquid delectus ea? Placeat repellat dolorum minima!
 						</p>
+						<div class="data__example">
+							<p>
+								<b>Example: </b>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ducimus quos? Vitae, odio aliquid, quasi omnis earum aliquam excepturi enim ad debitis exercitationem beatae delectus vero ipsam minus nemo! Eligendi!
+							</p>
+						</div>
 					</div>
 					<div class="data__relate">
-						<div>
-							<h6>Synonyms</h6>
-							<p>redesign</p>
+						<h6>Synonyms</h6>
+						<div class="data__relate__list">
+							<a href="#searchHeader" id="related">redesign</a>
+							<a>reconstrut</a>
+							<a>build</a>
 						</div>
-						<div>
-							<h6>Antonyms</h6>
-							<p>delete</p>
-						</div>
-					</div>
+					</class=>
 				</div>
-			</div>
-		</div>
+
+				<!-- error block -->
+				<div class="error">
+					<h4>Unable to fetch result</h4>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident cumque sed quaerat eius, architecto optio vel totam, quis a deserunt officiis neque temporibus eum perspiciatis. Distinctio, magnam voluptates. Eos!</p>
+				</div>
+				</div>
 	</div>
 	
 	<!-- index.js script tag -->

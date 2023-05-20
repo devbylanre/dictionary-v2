@@ -39,16 +39,39 @@ const displayData = (results) => {
                 return `
                   <div class="result__meanings">
 						        <h6>${partOfSpeech}</h6>
-						        <div class="result__meanings__example">
-							        <p>
-								        ${meanings[0].definitions.map((mapDefinition, key) => {
-                          return `<p>${key}. ${mapDefinition.definition}</p>`
-                        }).join('')}
-							        </p>
-						        </div>
+						        <div>
+								      ${definitions.map((mapDefinition, key) => {
+                        const {definition, example} = mapDefinition
+                        return `
+                          <div class="result__meanings__definition">
+                            <h6>
+                              ${key + 1}. ${definition}
+                            </h6>
+                            <span>
+                              ${
+                                (example)
+                                ? 'e.g' + ' ' + example
+                                : 'No example given'
+                              }
+                            </span>
+                          </div>
+                        `
+                      }).join('')}
+						        </div>  
+                    <div class="result__meanings__synonyms">
+                      ${
+                        (synonyms.length > 0)
+                        
+                        ? synonyms.map((synonym) => {
+                          return `<h6>${synonym}</h6>`
+                        }).join('')
+
+                        : '<h6>No synonyms given</h6>'
+                      } 
+                    </div>
 					        </div>
                 `
-              })}
+              }).join('')}
             </div>
           `
         )

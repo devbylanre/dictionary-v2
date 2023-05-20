@@ -6,9 +6,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dictionary Revamp</title>
 	<link rel="stylesheet" href="./index.css">
+	<!-- 
+		Google font - Manrope
+	 -->
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+	 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
 	<div class="container">
 		<div class="block">
 			<div class="search">
@@ -27,49 +32,9 @@
 				<div class="loader" id="preloader">
 					<div class="loader__bar"></div>
 				</div>
-	
-				<!-- data result -->
-				<div class="data">
-					<div class="data__header">
-						<div class="data__header__content">
-							<h1>Revamp</h1>
-							<p>/e:hamp/</p>
-						</div>
-						<div>
-							<!-- icon -->
-						</div>
-					</div>
-					<div class="data__speech">
-						<h6>Conjuction</h6>
-						<p>
-							<b>Definition: </b>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis necessitatibus fugiat impedit ullam nihil atque similique quod quo a at odio, harum error aliquid delectus ea? Placeat repellat dolorum minima!
-						</p>
-						<div class="data__example">
-							<p>
-								<b>Example: </b>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ducimus quos? Vitae, odio aliquid, quasi omnis earum aliquam excepturi enim ad debitis exercitationem beatae delectus vero ipsam minus nemo! Eligendi!
-							</p>
-						</div>
-					</div>
-					<div class="data__relate">
-						<h6>Synonyms</h6>
-						<div class="data__relate__list">
-							<a href="#searchHeader" id="related">redesign</a>
-							<a>reconstrut</a>
-							<a>build</a>
-						</div>
-					</class=>
-				</div>
 
-				<!-- error block -->
-				<div class="error">
-					<h4>Unable to fetch result</h4>
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam provident cumque sed quaerat eius, architecto optio vel totam, quis a deserunt officiis neque temporibus eum perspiciatis. Distinctio, magnam voluptates. Eos!</p>
-				</div>
-				</div>
-	</div>
-	
+				<!-- result block -->
+				<div id="resultElement"></div>
 	<!-- index.js script tag -->
 	<script src="./index.js"></script>
 </body>

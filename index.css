@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Manrope', sans-serif;
 }
 
 body {
@@ -107,7 +108,6 @@ body {
 	display: none;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 20px;
 }
 
 .loader__bar {
@@ -132,90 +132,88 @@ body {
 	to {transform: rotate(359deg);}
 }
 
-.data {
+/* result */
+.result {
 	display: flex;
 	flex-direction: column;
-	gap: 28px;
+	gap: 32px;
 }
 
-.data__header__content {
+.result .tab {
 	display: flex;
-	flex-direction: column-reverse;
-	gap: 4px;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.data__header__content h1 {
-	font-size: 24px;
-	font-weight: 600;
-}
-
-.data__header__content p {	
-	font-size: 12px;
-	background-color: #eee;
-	width: fit-content;
-	padding: 4px 12px;
-	border-radius: 100px;
-}
-
-.data .data__speech h6{
-	font-weight: 600;
-	font-size: 14px;
-}
-
-.data .data__speech p {
-	font-size: 14px;
-	letter-spacing: 0.2px;
-	margin-top: 8px;
-	background-color: #F5F5F5;
-	padding: 16px;
-	border-radius: 12px;
-}
-
-.data .data__relate h6{
-	font-size: 14px;
-	font-weight: 600;
-}
-
-.data .data__relate__list {
-	display: flex;
-	gap: 12px;
-	margin-top: 8px;
-}
-
-.data .data__relate__list a {
-	font-size: 12px;
-	text-transform: capitalize;
-	text-decoration: none;
-	font-weight: 400;
-	color: #000;
-	padding: 4px 12px;
-	background-color: #F5F5F5;
-	border-radius: 40px;
-	width: fit-content;
+.result .tab .tab__item{
+	font-size: 16px;
+	font-weight: 500;
+	color: #666;
 	cursor: pointer;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
-.data .data__relate p:hover {
-	background-color: #f1f1f1;
-}
-
-.error{
-	margin-top: 20px;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	gap: 12px;
-	padding: 0 80px;
-}
-
-.error h4{
+.result .tab .tab__item:hover{
 	color: #333;
+}
+
+.result .tab .tab__item--active {
+	color: #000;
+	font-weight: 700;
+}
+
+.result__definitions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.result__definitions .result__definitions__texts h1{
 	font-size: 24px;
 	font-weight: 500;
 }
 
-.error p {
+.result__definitions .result__definitions__texts p{
+	font-size: 12px;
+	margin-top: 4px;
 	color: #666;
+}
+
+.result__definitions .result__definitions__audio {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #eee;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.result__definitions .result__definitions__audio:hover {
+	background-color: #ddd;
+}
+
+.result__meanings {
+	padding: 24px;
+	background-color: 	#f5f5f5;
+	border-radius: 12px;
+}
+
+.result__meanings h6 {
+	font-size: 12px;
+	font-weight: 500;
+	color: #666;
+}
+
+.result__meanings__example {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-top: 12px;
+}
+
+.result__meanings__example p{
 	font-size: 14px;
 }
